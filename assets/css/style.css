@@ -44,3 +44,28 @@ a {
   text-decoration: none;
   color: #7dbbd8;
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+footer h3 {
+  font-size: 300%;
+  flex: 1 1 0;
+  padding: 0em 1em 1em 3em;
+  
+  text-align: right;
+  vertical-align: top;
+  border-right: 5px solid #2f302e;
+}
+
+footer nav {
+  flex: 3 1 0;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-size: 125%;
+  
+}
