@@ -2,8 +2,11 @@
 * {
   margin:0;
   padding:0;  
-  }
-  
+}
+:root {
+  --color_dark: #35363E;
+  --color_banner: #A5C9CC;
+}  
 body {
   position: relative;
   font-family: "Arial", sans-serif;
@@ -17,14 +20,14 @@ header {
   height:auto;
   padding: 20px;
   display: flex;
-  background-color: #2f302e;
-  color:#7dbbd8;
+  background-color: var(--color_dark);
+  color:var(--color_banner);
   justify-content: space-between;
 }
 
 header h1 {
-  color:#2f302e;
-  background-color: #7dbbd8;
+  color:var(--color_dark);
+  background-color: var(--color_banner);
   padding: 5px;
 }
 header nav ul {
@@ -35,15 +38,48 @@ li {
   vertical-align: middle;
   text-align: right;
   display: inline;
-  color: #7dbbd8;
-  border-bottom: 2px solid #7dbbd8;
+  color: var(--color_banner);
+  border-bottom: 2px solid var(--color_banner);
   padding: 5px;
   margin: 5px;
 }
 a {
   text-decoration: none;
-  color: #7dbbd8;
+  color: var(--color_banner);
 }
+/* 'About Me' Formatting */
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+section h3 {
+  font-size: 300%;
+  flex: 1 1 0;
+  padding: 0em 1em 1em 2em;
+  
+  text-align: right;
+  vertical-align: top;
+  border-right: 5px solid var(--color_dark);
+}
+
+article {
+  flex: 3 1 0;
+  text-align: left;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-size: 125%;
+  
+}
+p {
+  margin-bottom: 1em;
+}
+
+/* To Do: 'Works' Formatting */
+
+/* 'Contact Me' Formatting */
 
 footer {
   display: flex;
@@ -54,11 +90,11 @@ footer {
 footer h3 {
   font-size: 300%;
   flex: 1 1 0;
-  padding: 0em 1em 1em 3em;
+  padding: 0em 1em 1em 2em;
   
   text-align: right;
   vertical-align: top;
-  border-right: 5px solid #2f302e;
+  border-right: 5px solid var(--color_dark);
 }
 
 footer nav {
@@ -69,3 +105,6 @@ footer nav {
   font-size: 125%;
   
 }
+/* To Do: Viewport Style Edits*/
+
+/* To Do: Add User Input */
