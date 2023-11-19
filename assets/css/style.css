@@ -15,7 +15,7 @@ body {
   color: #4F4846;
 }
 
-  /* Header Styling */
+/* Header Styling */
 header {
   height:auto;
   padding: 20px;
@@ -25,7 +25,7 @@ header {
   justify-content: space-between;
 }
 
-header h1 {
+.banner {
   color:var(--color_dark);
   background-color: var(--color_banner);
   padding: 5px;
@@ -47,64 +47,108 @@ a {
   text-decoration: none;
   color: var(--color_banner);
 }
-/* 'About Me' Formatting */
-
-section {
+/* General Section Formatting */
+.block-section {
+  /* TODO: Remove Border here */
+  border: 2px solid cyan;
+  /* Good formatting */
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
 
-section h3 {
+.left-side {
+  /* TODO: Remove Border here */
+  border: 2px solid hotpink;
+  /* Good formatting */
   font-size: 300%;
   flex: 1 1 0;
-  padding: 0em 1em 1em 2em;
-  
+  max-width: 250px;
+  padding: 0em .5em 1em 0em;
   text-align: right;
   vertical-align: top;
   border-right: 5px solid var(--color_dark);
 }
 
-article {
+.right-side {
+  /* TODO: Remove Border here */
+  border: 2px solid hotpink;
+  /* Good Formatting */
   flex: 3 1 0;
   text-align: left;
   justify-content: space-evenly;
-  padding: 30px;
+  padding: 1em;
   font-size: 125%;
-  
 }
+/* 'About Me' Specific Formatting */
 p {
   margin-bottom: 1em;
 }
 
 /* To Do: 'Works' Formatting */
-
-/* 'Contact Me' Formatting */
-
-footer {
+#works .right-side{
+  /* Centers along the main axis determined by flex-direction */
+  justify-content: center;
+  /* Centers along the opposite axis */
+  align-items: center;
+  width: 90%;
+  /* Uses the height of the viewport */
+  height: auto;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 2px;
+}
+.card {
+  flex:1 0 0;
   display: flex;
-  justify-content: space-between;
-  margin: 10px;
+  flex-wrap: wrap;
+  border: 2px solid aqua;
+  height:auto;
+  position: relative;
+  max-width: 300px;
 }
-
-footer h3 {
-  font-size: 300%;
-  flex: 1 1 0;
-  padding: 0em 1em 1em 2em;
-  
-  text-align: right;
-  vertical-align: top;
-  border-right: 5px solid var(--color_dark);
+.card img {
+  width: 100%;
+  opacity: 1;
 }
-
-footer nav {
-  flex: 3 1 0;
+.card header {
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  background-color: var(--color_banner);
+  color:var(--color_dark);
+}
+/* 'Contact Me' Formatting */
+footer nav ul{
   text-align: center;
-  justify-content: space-evenly;
-  padding: 30px;
-  font-size: 125%;
-  
+ }
+footer nav ul li{
+  border-bottom: 2px solid var(--color_dark);
 }
-/* To Do: Viewport Style Edits*/
+footer nav ul li a{
+  color: var(--color_dark);
+}
+ /* To Do: Viewport Style Edits*/
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  header {
+    color:green
+  }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  header {
+    color: blue;
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  header {
+    color: purple;
+  }
+}
 
 /* To Do: Add User Input */
