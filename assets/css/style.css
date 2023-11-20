@@ -1,4 +1,4 @@
-/* Basic Formatting */
+/* (BEGIN) Basic Formatting */
 * {
   margin:0;
   padding:0;  
@@ -15,8 +15,9 @@ body {
   background-color: var(--color_background);
   color: #4F4846;
 }
+/* (END) Basic Formatting */
 
-/* Header Styling */
+/* (BEGIN) Header Formatting */
 header {
   position:relative;
   height:auto;
@@ -63,7 +64,9 @@ a {
   text-decoration: none;
   color: var(--color_banner);
 }
-/* Top Photo Formatting */
+/* (END) Header Formatting */
+
+/* (BEGIN) Top Photo Formatting */
 .top_photo {
   display: flex;
   position: relative;
@@ -77,16 +80,17 @@ a {
   bottom: 0.5em;
   right: 2em;
 }
-/* General Section Formatting */
+/* (END) Top Photo Formatting */
+
+/* (BEGIN) General Section Formatting */
 .block-section {
-  /* Good formatting */
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
 
+/* Standardized Formatting of Left Side of the Page */
 .left-side {
-  /* Good formatting */
   font-size: 300%;
   flex: 1 1 0;
   min-width: 200px; 
@@ -97,20 +101,23 @@ a {
   border-right: 5px solid var(--color_dark);
 }
 
+/* Standardized Formatting of Right Side of the Page */
 .right-side {
-  /* Good Formatting */
   flex: 3 1 0;
   text-align: left;
   justify-content: space-evenly;
   padding: 1em;
   font-size: 125%;
 }
-/* 'About Me' Specific Formatting */
+/* (END) General Section Formatting */
+
+/* (BEGIN) 'About Me' Specific Formatting */
 article p {
   margin-bottom: 1em;
 }
+/* (END) 'About Me' Specific Formatting */
 
-/* To Do: 'Works' Formatting */
+/* (BEGIN) 'Works' Specific Formatting */
 #works .right-side{
   display: flex;
   flex-wrap: wrap;
@@ -120,6 +127,11 @@ article p {
   height: auto;
   margin: 0 auto;
 }
+/* Keeps the Most recent Card on its own line */
+.most-recent {
+  min-width: 95%;
+}
+
 .card {
   display: flex;
   flex: 1 1 0;
@@ -130,14 +142,11 @@ article p {
   margin:1em;
 }
 
-.most-recent {
-  min-width: 95%;
-}
-
 .card img {
   width: 100%;
   z-index: 1;
 }
+
 .card .overlay {
   display: block;
   position: absolute;
@@ -151,7 +160,10 @@ article p {
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
-}  
+}
+  /* Makes Image Clickable by making the <a tag> a block display 
+  which takes the whole card and pushes the seo compliant text 
+  description off the page */
 .link {
   display: block;
   width: 100%;
@@ -167,8 +179,9 @@ article p {
   background-color: var(--color_banner);
   color:var(--color_dark);
 }
+/* (END) 'Works' Specific Formatting */
 
-/* 'Contact Me' Formatting */
+/* (BEGIN) 'Contact Me' Formatting */
 footer nav ul{
   text-align: center;
  }
@@ -178,8 +191,9 @@ footer nav ul li{
 footer nav ul li a{
   color: var(--color_dark);
 }
- /* Viewport Style Edits */
+/* (END) 'Contact Me' Formatting */
 
+/* (BEGIN) Viewport Style Edits */
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
   #headshot {
@@ -202,9 +216,11 @@ footer nav ul li a{
   }
 
 }
+/* (END) Viewport Style Edits */
 
-/* User Input */
+/* (BEGIN) User Input Formatting*/
 .card:hover .overlay {
   opacity: 0.3;
 
 }
+/* (END) User Input Formatting */
