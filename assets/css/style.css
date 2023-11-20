@@ -45,7 +45,6 @@ header figure {
 }
 #headshot {
   height: 100%;
-  width: 
 }
 header nav ul {
   vertical-align: middle;
@@ -80,8 +79,6 @@ a {
 }
 /* General Section Formatting */
 .block-section {
-  /* TODO: Remove Border here */
-  /* border: 2px solid cyan; */
   /* Good formatting */
   display: flex;
   justify-content: space-between;
@@ -89,8 +86,6 @@ a {
 }
 
 .left-side {
-  /* TODO: Remove Border here */
-  /* border: 2px solid hotpink; */
   /* Good formatting */
   font-size: 300%;
   flex: 1 1 0;
@@ -103,8 +98,6 @@ a {
 }
 
 .right-side {
-  /* TODO: Remove Border here */
-  /* border: 2px solid hotpink; */
   /* Good Formatting */
   flex: 3 1 0;
   text-align: left;
@@ -185,7 +178,7 @@ footer nav ul li{
 footer nav ul li a{
   color: var(--color_dark);
 }
- /* To Do: Viewport Style Edits*/
+ /* Viewport Style Edits */
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
@@ -210,7 +203,7 @@ footer nav ul li a{
 
 }
 
-/* To Do: Add User Input */
+/* User Input */
 .card:hover .overlay {
   opacity: 0.3;
 

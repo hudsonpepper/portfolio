@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a project to create and display a professional portolio of projects.
+This is a project to create and display a professional portfolio of previous work. 
 
 ## Usage
 
