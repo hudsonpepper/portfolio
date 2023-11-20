@@ -137,7 +137,7 @@ article p {
   margin:1em;
 }
 
-#most-recent {
+.most-recent {
   min-width: 95%;
 }
 
@@ -146,6 +146,7 @@ article p {
   z-index: 1;
 }
 .card .overlay {
+  display: block;
   position: absolute;
   z-index: 2;
   top: 0;
@@ -157,7 +158,14 @@ article p {
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
+}  
+.link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
 }
+
 .card header {
   position: absolute;
   z-index: 3;
