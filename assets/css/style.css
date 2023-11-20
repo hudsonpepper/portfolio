@@ -37,14 +37,20 @@ header {
   flex-direction: column;
 }
 header figure {
+  padding: 0;
   display: flex;
   position:absolute;
-  right: 50%;
+  right: 48%;
+  bottom: 10px;
   height: 4em;
   width: auto;
   vertical-align: middle;
+
 }
 #headshot {
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 1em;
   height: 100%;
 }
 header nav ul {
@@ -93,7 +99,7 @@ a {
 .left-side {
   font-size: 300%;
   flex: 1 1 0;
-  min-width: 200px; 
+  min-width: 100px; 
   padding: 0em .5em 1em 0em;
   text-align: right;
   vertical-align: top;
@@ -134,8 +140,9 @@ article p {
   border: 2px solid var(--color_banner);
   height:auto;
   position: relative;
-  min-width: 200px;
+  min-width: 200px; 
   margin:1em;
+  min-width: calc(48% - 2em);
 }
 
 /* Keeps the Most recent Card on its own line */
@@ -188,6 +195,7 @@ footer nav ul{
  }
 footer nav ul li{
   border-bottom: 2px solid var(--color_dark);
+  padding-top: 3em;
 }
 footer nav ul li a{
   color: var(--color_dark);
@@ -214,6 +222,9 @@ footer nav ul li a{
 @media screen and (max-width: 576px) {
   body {
     font-size: .6em;
+  }
+  .card {
+    min-width: 95%;
   }
 
 }
