@@ -223,9 +223,15 @@ footer nav ul li a{
   body {
     font-size: .6em;
   }
+
   .card {
     min-width: 95%;
   }
+
+  footer nav ul li{
+    padding-top: 5em;
+  }  
+
 
 }
 /* (END) Viewport Style Edits */
