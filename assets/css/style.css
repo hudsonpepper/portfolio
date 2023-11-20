@@ -127,10 +127,6 @@ article p {
   height: auto;
   margin: 0 auto;
 }
-/* Keeps the Most recent Card on its own line */
-.most-recent {
-  min-width: 95%;
-}
 
 .card {
   display: flex;
@@ -140,6 +136,11 @@ article p {
   position: relative;
   min-width: 200px;
   margin:1em;
+}
+
+/* Keeps the Most recent Card on its own line */
+.most-recent {
+  min-width: 95%;
 }
 
 .card img {
@@ -221,6 +222,5 @@ footer nav ul li a{
 /* (BEGIN) User Input Formatting*/
 .card:hover .overlay {
   opacity: 0.3;
-
 }
 /* (END) User Input Formatting */
